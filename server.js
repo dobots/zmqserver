@@ -79,7 +79,7 @@ socket.bind('tcp://' + host + ':' + nameserver_port, function(err) {
 //		console.log(socket.identity + ': received ' + data.toString());
 		var str = new String();
 		var start = 1;
-		for (var i = 1; i < data.length - 1 ; i++) {
+		for (var i = 1; i < data.length - 1 ; i++) { // Why start at 1? Atm this removes "/resolve"
   			if (data[i] == 47) { // '/'
 				start = i;
 				break;

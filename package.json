@@ -1,10 +1,10 @@
 { "name"            : "zmqserver"
 , "description"     : "Nameserver for zeromq"
 , "homepage"        : "http://www.dobots.nl"
-, "repository"      : "git://github.com/mrquincle/zmqserver"
+, "repository"      : "git://github.com/dobots/zmqserver"
 , "version"         : "0.0.1"
 , "author"          : "Anne van Rossum <anne@dobots.nl>"
 , "keywords"        : ["zmqserver", "zeromq", "zmq"]
-, "dependencies"    : {"express": "2.4.x", "zmq": "2.2.0"}
+, "dependencies"    : {"express": "2.4.x", "zmq": "2.5.x"}
 , "main"            : "./server.js"
 }
