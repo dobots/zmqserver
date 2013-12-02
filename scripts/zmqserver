@@ -2,4 +2,4 @@
 
 targetdir=/usr/bin/zmqserver-dir
 
-cd $targetdir && nodejs server.js
+cd $targetdir && node server.js
