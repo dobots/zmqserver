@@ -3,8 +3,7 @@
 targetdir=$(DESTDIR)/usr/bin/zmqserver-dir
 
 all:
-	@echo "This is a server based on node.js. It does not need to be compiled"
-	@echo "run \"npm install -d\" in this directory if you want to update the packages in the node_modules directory"
+	npm install -d
 
 install:
 	mkdir --parents $(targetdir)
@@ -17,3 +16,4 @@ uninstall:
 	rm --recursive --force $(targetdir)
 	rm $(DESTDIR)/usr/bin/zmqserver
 
+.PHONY: all install uninstall
